@@ -1,0 +1,40 @@
+<div class="container mt-5">
+  <div class="card shadow">
+    <div class="card-header bg-primary text-white">
+      <h1 class="card-title mb-0 text-center">Liste des blocs</h1>
+    </div>
+    <div class="card-body m-3">
+      <table class="table table-striped">
+        <thead class="bg-light text-center">
+          <tr>
+            <th scope="col">Bloc Name</th>
+            <th scope="col">Bloc Capacity</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <ng-container *ngIf="blocs && blocs.length > 0; else noData">
+            <tr *ngFor="let bloc of blocs">
+              <td class="text-center">{{ bloc.nomBloc }}</td>
+              <td class="text-center">{{ bloc.capaciteBloc }}</td>
+              <td class="text-center">
+                <button class="btn btn-danger btn-sm" (click)="delete(bloc.idBloc)">Delete</button>
+                <button class="btn btn-success btn-sm" (click)="navigateToUpdateBloc(bloc.idBloc)">Update</button>
+              </td>
+            </tr>
+          </ng-container>
+          <ng-template #noData>
+            <tr>
+              <td colspan="3" class="text-center">Aucune donnée disponible</td>
+            </tr>
+          </ng-template>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- Bouton Add Bloc en dehors du container -->
+<div class="mt-4 text-center">
+  <button class="btn btn-success" (click)="navigateToaddBloc()">Add Bloc</button>
+</div>

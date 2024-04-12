@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="form-container">
+      <h1>Add Bloc</h1>
+      <form #blocForm="ngForm" (ngSubmit)="saveBloc()">
+        <!-- Foyer details input fields -->
+        <label for="blocName">Bloc Name:</label>
+        <input type="text" id="blocName" name="blocName" [(ngModel)]="bloc.nomBloc" required>
+        <br>
+        <label for="blocCapacity">Bloc Capacity:</label>
+        <input type="number" id="blocCapacity" name="blocCapacity" [(ngModel)]="bloc.capaciteBloc" required>
+        <br>
+        <!-- Other Foyer details input fields go here -->
+        <button type="submit">Save Bloc</button>
+      </form>
+    </div>
+  </div>
+  

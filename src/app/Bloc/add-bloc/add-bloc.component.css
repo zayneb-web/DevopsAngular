@@ -1,0 +1,59 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff; /* Couleur de fond modifiée */
+  }
+  
+  .form-container {
+    max-width: 1000px; /* Augmente la largeur du conteneur du formulaire */
+    padding: 80px; /* Augmente l'espacement intérieur du conteneur du formulaire */
+    background-color: white;
+    border-radius: 12px; /* Augmente le rayon de la bordure du conteneur du formulaire */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Augmente l'ombre du conteneur du formulaire */
+    text-align: center;
+  }
+  
+  .form-container h1 {
+    text-align: center;
+    font-size: 32px; /* Augmente la taille de la police pour le titre */
+    text-decoration: underline;
+    color: rgb(0, 0, 255);
+    margin-bottom: 20px;
+
+  }
+  
+  .form-container label {
+    display: block;
+    margin-bottom: 16px; /* Augmente l'espacement entre les labels */
+    font-size: 18px; /* Augmente la taille de la police des labels */
+  }
+  
+  .form-container input[type="text"],
+  .form-container input[type="number"] {
+    width: 100%;
+    padding: 12px; /* Augmente le rembourrage des champs de saisie */
+    margin-bottom: 24px; /* Augmente l'espacement entre les champs de saisie */
+    border: 2px solid #ccc; /* Augmente l'épaisseur de la bordure des champs de saisie */
+    border-radius: 8px; /* Augmente le rayon de la bordure des champs de saisie */
+    font-size: 16px; /* Augmente la taille de la police des champs de saisie */
+  }
+  
+  .form-container button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 14px; /* Augmente le rembourrage du bouton */
+    border: none;
+    border-radius: 8px; /* Augmente le rayon de la bordure du bouton */
+    background-color: #007bff; /* Couleur de fond du bouton */
+    color: white;
+    font-size: 18px; /* Augmente la taille de la police du bouton */
+    cursor: pointer;
+    
+  }
+  
+  .form-container button[type="submit"]:hover {
+    background-color: #005fb3; /* Couleur de fond du bouton au survol */
+  }
+  
